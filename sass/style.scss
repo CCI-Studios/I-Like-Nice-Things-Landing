@@ -191,14 +191,34 @@ footer
     background-position: center center;
     background-size: contain;
     text-decoration: none;
+    
+    &:before
+    {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -999999px;
+    }
   }
   .twitter
   {
     background-image: url(../images/social-twitter.svg);
+    
+    &:before,
+    &:hover
+    {
+      background-image: url(../images/social-twitter-hover.svg);
+    }
   }
   .instagram
   {
     background-image: url(../images/social-instagram.svg);
+    
+    &:before,
+    &:hover
+    {
+      background-image: url(../images/social-instagram-hover.svg);
+    }
   }
 }
 
